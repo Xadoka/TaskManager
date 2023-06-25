@@ -28,11 +28,10 @@ public class DBManager {
 
      public static void deleteTask(Long id){
 
-
          Task taskToRemove = null;
          for (Task task : taskList) {
              if (task.getId().equals(id)) {
-                 taskToRemove = task;
+                 taskToRemove=task;
                  break;
              }
          }
